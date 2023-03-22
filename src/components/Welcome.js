@@ -1,5 +1,4 @@
 import React from 'react'
-// import { makeStyles } from 'tss-react/mui';
 import { Typography, IconButton, Box, Stack, Badge } from '@mui/material';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 
@@ -14,7 +13,7 @@ const Welcome = () => {
       marginTop:'20px'
       }}>
             <Box>
-            <Typography variant="h6">
+            <Typography variant="h6" sx={{fontWeight:"700"}}>
               Welcome
             </Typography>
             <Typography variant="body2">
@@ -22,8 +21,8 @@ const Welcome = () => {
             </Typography>
             </Box>
             <IconButton color="inherit" edge="end">
-              <Badge badgeContent={2} color="error">
-              <NotificationsIcon/>
+              <Badge badgeContent={2} color="error" sx={{position:"relative"}}>
+              <NotificationsIcon sx={{position:'aboslute'}}/>
               </Badge>
             </IconButton>
       </Stack>

@@ -31,12 +31,12 @@ export const ProductCard = ({bid, image, name, title}) => {
       <Box>
         <ProductBox>
           <Box sx={{ backgroundColor: "#F2F4F7", borderRadius:"0.5rem" }}>
-            <img src={image} alt="" loading="lazy" style={{margin:"0px auto", width:"90%", height:"90%", objectFit:"contain", aspectRatio:"16/9"}}/>
+            <img src={image} alt="" loading="lazy" style={{margin:"0px auto", width:"90%", height:"90%", objectFit:"contain", aspectRatio:"16/9", display:"block", padding:"8px 0"}}/>
           </Box>
           <Stack direction={"row"} paddingTop={"1rem"}>
             <Box>
-              <Box variant="body2" sx={{backgroundColor:'#F2F4F7', width:'15px', height:"15px", borderRadius:"50%",fontSize:"10px"}}>
-                <Typography variant="body2" component='p' fontSize={8} sx={{textAlign:"center", verticalAlign: "middle", lineHeight:"15px"}}>{abbreviateName(name)}</Typography>
+              <Box variant="body2" sx={{backgroundColor:'#F2F4F7', width:'17px', height:"17px", borderRadius:"50%",fontSize:"10px", marginRight:"5px"}}>
+                <Typography variant="body2" component='p' fontSize={8} sx={{textAlign:"center", verticalAlign: "middle", lineHeight:"17px", fontSize:"13px",}}>{abbreviateName(name)}</Typography>
               </Box>
             </Box>
             <Typography variant="body1" component="p" sx={{ fontSize:"13px", fontWeight:"bold"}}>

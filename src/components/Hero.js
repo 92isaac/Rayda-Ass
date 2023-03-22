@@ -5,7 +5,7 @@ import content from "../assets/Content.png";
 
 const Hero = () => {
   const RadialBg = styled(Box)({
-    background: "linear-gradient(to bottom right, #B750FF, #FEE080)",
+    background: "linear-gradient(to bottom right, #991FE4, #F99F7B)",
     height: "150px",
     borderRadius: "10px",
     margin: "20px",
@@ -29,30 +29,56 @@ const Hero = () => {
           <img src={content} alt="" width="120px" height="120px" />
         </Box>
         <Stack direction={"row"} justifyContent="space-between">
-          <Typography variant="subtitle1" marginLeft={20}>
+          <Typography
+            variant="subtitle1"
+            marginLeft={20}
+            sx={{
+              fontSize: { xs: "10px", sm: "14px" },
+              fontWeight: "700",
+              marginLeft: { xs: "120px", sm: "150px" },
+            }}
+          >
             Starts in: 3 days: 2 hours: 24 minutes
           </Typography>
           <Button
             variant="outlined"
             startIcon={<ThumbUpIcon />}
-            sx={{ marginRight: "60px", fontSize: "15px" }}
+            sx={{
+              marginRight: { xs: "20px", sm: "60px" },
+              color: "#000",
+              fontSize: { xs: "6px", sm: "12px" },
+            }}
           >
             Accept Invite
           </Button>
         </Stack>
-        <Stack direction={"row"} marginLeft={20} marginBottom={1} spacing={1}>
+        <Stack
+          direction={"row"}
+          marginLeft={20}
+          marginBottom={1}
+          spacing={1}
+          sx={{
+            marginLeft: { xs: "120px", sm: "150px" },
+          }}
+        >
           <Typography
-            variant="paragraph"
+            variant="body2"
             sx={{
               color: "#B54708",
               borderRadius: "10px",
               backgroundColor: "#FFFAEB",
               padding: "1px 15px",
+              fontSize: { xs: "6px", sm: "12px" },
             }}
           >
             . Not Live
           </Typography>
-          <Typography>Layers Auction</Typography>
+          <Typography
+            variant="body2"
+            sx={{ fontSize: { xs: "6px", sm: "12px" } }}
+          >
+            Layers Auction
+          </Typography>
         </Stack>
       </PositionDiv>
     </Box>

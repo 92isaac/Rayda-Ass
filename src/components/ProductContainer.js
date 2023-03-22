@@ -32,7 +32,7 @@ export const ProductContainer = () => {
         <Typography>Featured Items</Typography>
         <Button
           variant="outlined"
-          sx={{ fontSize: "15px", textTransform: "capitalize" }}
+          sx={{ fontSize: "12px", textTransform: "capitalize", color:"#000"}}
         >
           View Auction
         </Button>
