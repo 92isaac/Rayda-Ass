@@ -4,6 +4,7 @@ import React from "react";
 import content from "../assets/Content.png";
 
 const Hero = () => {
+  // Define a styled component for a radial gradient background
   const RadialBg = styled(Box)({
     background: "linear-gradient(to bottom right, #991FE4, #F99F7B)",
     height: "150px",
@@ -11,11 +12,13 @@ const Hero = () => {
     margin: "20px",
   });
 
+  // Define a styled component for a relative positioned div
   const PositionDiv = styled(Box)({
     position: "relative",
   });
   return (
     <Box
+      // Set some styles for the main container
       sx={{
         boxShadow: "1px 1px 2px",
         borderRadius: "10px",
@@ -29,6 +32,7 @@ const Hero = () => {
           <img src={content} alt="" width="120px" height="120px" />
         </Box>
         <Stack direction={"row"} justifyContent="space-between">
+          {/* Show a countdown to the event */}
           <Typography
             variant="subtitle1"
             marginLeft={20}
@@ -40,6 +44,7 @@ const Hero = () => {
           >
             Starts in: 3 days: 2 hours: 24 minutes
           </Typography>
+          {/* Show a button to accept the invite */}
           <Button
             variant="outlined"
             startIcon={<ThumbUpIcon />}
@@ -61,6 +66,7 @@ const Hero = () => {
             marginLeft: { xs: "120px", sm: "150px" },
           }}
         >
+          {/* Show a label indicating the event is not live */}
           <Typography
             variant="body2"
             sx={{
@@ -73,6 +79,7 @@ const Hero = () => {
           >
             . Not Live
           </Typography>
+          {/* Show a label with the name of the event */}
           <Typography
             variant="body2"
             sx={{ fontSize: { xs: "6px", sm: "12px" } }}
