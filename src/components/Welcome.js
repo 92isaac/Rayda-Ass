@@ -8,7 +8,11 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 const Welcome = () => {
 
     return (
-      <Stack direction={'row'} justifyContent='space-between' borderBottom={1}  sx={{display:{xs:'block', sm:"flex",}}}>
+      <Stack direction={'row'} justifyContent='space-between'  sx={{display:{xs:'block', sm:"flex",},
+      boxShadow: "0 4px 2px -2px gray",
+      paddingBottom:'30px',
+      marginTop:'20px'
+      }}>
             <Box>
             <Typography variant="h6">
               Welcome
